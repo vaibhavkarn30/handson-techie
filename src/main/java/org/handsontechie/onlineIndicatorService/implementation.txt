@@ -1,0 +1,10 @@
+
+# OnlineIndicator Service
+
+1) This service is designed to simply tell whether a user is online or offline
+2) I have used simply combination of websockets and h2 database to achieve this feature.
+3) I maintain a table for status as soon as client is connected to server via websocket we update entry as true.
+4) If connection is closed we update status to false
+5) I have also exposed a rest endpoint to simply get the status of the user if active or not.
+6) I have also tried and replicate the scenario of multiple users sending message to each other over websockets,
+As soon as a message is published it is being communicated to all the active sessions other than the current active session
