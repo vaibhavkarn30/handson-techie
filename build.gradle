@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.0'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group 'org.handsontechie'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // Spring Boot core starter
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // Spring Boot web starter for creating web applications (REST APIs)
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Optional: Spring Data JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Optional: H2 database or another database
+    runtimeOnly 'com.h2database:h2'
+
+    // Optional: Testing dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+}
+
+test {
+    useJUnitPlatform()
+}
