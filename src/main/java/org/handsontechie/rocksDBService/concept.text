@@ -1,0 +1,5 @@
+# Rocks DB
+
+1) Rocks DB can be used as an option for distributed cache
+2) Where we are okay to cache locally on every server and also don't want to waste much RAM and actually utilise the hard disk of our ec2 machine
+3) Rocks DB ensures persistent storage as it writes on the disk.
